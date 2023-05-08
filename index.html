@@ -18,8 +18,11 @@
   <audio id="player" controls></audio>
   <p id="filename"></p>
   <p id="message"></p>
-  <button id="rewind">Rewind</button>
-  <button id="fastforward">Fast Forward</button>
+  <div id="button-container">
+    <button id="rewind">Rewind</button>
+    <button id="fastforward">Fast Forward</button>
+  </div>
+
   <script>
     // Get the dropzone, player, filename, message, rewind, fastforward, and fileinput elements
     const dropzone = document.querySelector('#dropzone');

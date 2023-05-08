@@ -1,4 +1,9 @@
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   background-color: #333333;
 }
 
@@ -12,9 +17,43 @@ p {
 
 #dropzone {
   border-color: #00FF00;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 button {
   background-color: #00FF00;
   color: black;
+}
+
+@media (max-width: 600px) {
+  #dropzone {
+    width: 80%;
+  }
+
+  #rewind,
+  #fastforward {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+  }
+}
+
+#button-container {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 786px) {
+  #button-container {
+    flex-direction: column;
+  }
+}
+
+#fileinput {
+  margin: 10px;
+  padding: 5px;
 }
