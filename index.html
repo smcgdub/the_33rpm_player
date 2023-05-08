@@ -9,17 +9,20 @@
   <h1>Audio Player</h1>
   <p>Drag and drop an audio file here:</p>
   <div id="dropzone" style="width: 300px; height: 100px; border: 2px dashed #ccc;"></div>
+  <input type="file" id="fileinput" accept="audio/*">
   <audio id="player" controls></audio>
   <p id="filename"></p>
   <button id="rewind">Rewind</button>
   <button id="fastforward">Fast Forward</button>
+
   <script>
-    // Get the dropzone, player, filename, rewind, and fastforward elements
+    // Get the dropzone, player, filename, rewind, fastforward, and fileinput elements
     const dropzone = document.querySelector('#dropzone');
     const player = document.querySelector('#player');
     const filename = document.querySelector('#filename');
     const rewind = document.querySelector('#rewind');
     const fastforward = document.querySelector('#fastforward');
+    const fileinput = document.querySelector('#fileinput');
 
     // Handle the dragover event
     dropzone.addEventListener('dragover', (event) => {
@@ -32,6 +35,25 @@
 
       // Get the dropped file
       const file = event.dataTransfer.files[0];
+
+      // Display the file name
+      filename.textContent = file.name;
+
+      // Create a file reader
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        // Set the audio source and play the file at 33rpm
+        player.src = event.target.result;
+        player.playbackRate = 0.5;
+        player.play();
+      };
+      reader.readAsDataURL(file);
+    });
+
+    // Handle the change event for the file input
+    fileinput.addEventListener('change', (event) => {
+      // Get the selected file
+      const file = event.target.files[0];
 
       // Display the file name
       filename.textContent = file.name;
