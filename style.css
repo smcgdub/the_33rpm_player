@@ -1,4 +1,9 @@
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   background-color: #E6E6FA;
 }
 
@@ -12,9 +17,24 @@ p {
 
 #dropzone {
   border-color: #4169E1;
+  width: 300px;
+  height: 100px;
 }
 
 button {
   background-color: #4169E1;
   color: white;
+}
+
+@media (max-width: 600px) {
+  #dropzone {
+    width: 80%;
+  }
+
+  #rewind,
+  #fastforward {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+  }
 }
