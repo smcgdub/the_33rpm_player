@@ -11,7 +11,32 @@
   <div id="dropzone" style="width: 300px; height: 100px; border: 2px dashed #ccc;"></div>
   <audio id="player" controls></audio>
   <script>
-    // Your JavaScript code goes here
+    // Get the dropzone and player elements
+    const dropzone = document.querySelector('#dropzone');
+    const player = document.querySelector('#player');
+
+    // Handle the dragover event
+    dropzone.addEventListener('dragover', (event) => {
+      event.preventDefault();
+    });
+
+    // Handle the drop event
+    dropzone.addEventListener('drop', (event) => {
+      event.preventDefault();
+
+      // Get the dropped file
+      const file = event.dataTransfer.files[0];
+
+      // Create a file reader
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        // Set the audio source and play the file at 33rpm
+        player.src = event.target.result;
+        player.playbackRate = 0.5;
+        player.play();
+      };
+      reader.readAsDataURL(file);
+    });
   </script>
 </body>
 
