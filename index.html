@@ -11,11 +11,15 @@
   <div id="dropzone" style="width: 300px; height: 100px; border: 2px dashed #ccc;"></div>
   <audio id="player" controls></audio>
   <p id="filename"></p>
+  <button id="rewind">Rewind</button>
+  <button id="fastforward">Fast Forward</button>
   <script>
-    // Get the dropzone, player, and filename elements
+    // Get the dropzone, player, filename, rewind, and fastforward elements
     const dropzone = document.querySelector('#dropzone');
     const player = document.querySelector('#player');
     const filename = document.querySelector('#filename');
+    const rewind = document.querySelector('#rewind');
+    const fastforward = document.querySelector('#fastforward');
 
     // Handle the dragover event
     dropzone.addEventListener('dragover', (event) => {
@@ -41,6 +45,16 @@
         player.play();
       };
       reader.readAsDataURL(file);
+    });
+
+    // Handle the click event for the rewind button
+    rewind.addEventListener('click', () => {
+      player.currentTime -= 10;
+    });
+
+    // Handle the click event for the fastforward button
+    fastforward.addEventListener('click', () => {
+      player.currentTime += 10;
     });
   </script>
 </body>
