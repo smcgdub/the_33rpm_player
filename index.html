@@ -12,13 +12,15 @@
   <input type="file" id="fileinput" accept="audio/*">
   <audio id="player" controls></audio>
   <p id="filename"></p>
+  <p id="message"></p>
   <button id="rewind">Rewind</button>
   <button id="fastforward">Fast Forward</button>
   <script>
-    // Get the dropzone, player, filename, rewind, fastforward, and fileinput elements
+    // Get the dropzone, player, filename, message, rewind, fastforward, and fileinput elements
     const dropzone = document.querySelector('#dropzone');
     const player = document.querySelector('#player');
     const filename = document.querySelector('#filename');
+    const message = document.querySelector('#message');
     const rewind = document.querySelector('#rewind');
     const fastforward = document.querySelector('#fastforward');
     const fileinput = document.querySelector('#fileinput');
@@ -35,18 +37,24 @@
       // Get the dropped file
       const file = event.dataTransfer.files[0];
 
-      // Display the file name without the extension
-      filename.textContent = file.name.replace(/\.[^/.]+$/, "");
+      // Check if the file is an audio file
+      if (file.type.startsWith('audio/')) {
+        // Display the file name without the extension
+        filename.textContent = file.name.replace(/\.[^/.]+$/, "");
 
-      // Create a file reader
-      const reader = new FileReader();
-      reader.onload = (event) => {
-        // Set the audio source and play the file at 33rpm
-        player.src = event.target.result;
-        player.playbackRate = 0.5;
-        player.play();
-      };
-      reader.readAsDataURL(file);
+        // Create a file reader
+        const reader = new FileReader();
+        reader.onload = (event) => {
+          // Set the audio source and play the file at 33rpm
+          player.src = event.target.result;
+          player.playbackRate = 0.5;
+          player.play();
+        };
+        reader.readAsDataURL(file);
+      } else {
+        // Display a message to the user
+        message.textContent = "Sorry, the type of file you are trying to load cannot be played in this player.";
+      }
     });
 
     // Handle the change event for the file input
@@ -54,18 +62,24 @@
       // Get the selected file
       const file = event.target.files[0];
 
-      // Display the file name without the extension
-      filename.textContent = file.name.replace(/\.[^/.]+$/, "");
+      // Check if the file is an audio file
+      if (file.type.startsWith('audio/')) {
+        // Display the file name without the extension
+        filename.textContent = file.name.replace(/\.[^/.]+$/, "");
 
-      // Create a file reader
-      const reader = new FileReader();
-      reader.onload = (event) => {
-        // Set the audio source and play the file at 33rpm
-        player.src = event.target.result;
-        player.playbackRate = 0.5;
-        player.play();
-      };
-      reader.readAsDataURL(file);
+        // Create a file reader
+        const reader = new FileReader();
+        reader.onload = (event) => {
+          // Set the audio source and play the file at 33rpm
+          player.src = event.target.result;
+          player.playbackRate = 0.5;
+          player.play();
+        };
+        reader.readAsDataURL(file);
+      } else {
+        // Display a message to the user
+        message.textContent = "Sorry, the type of file you are trying to load cannot be played in this player.";
+      }
     });
 
     // Handle the click event for the rewind button
