@@ -25,12 +25,20 @@
     const fastforward = document.querySelector('#fastforward');
     const fileinput = document.querySelector('#fileinput');
 
-    // Handle the dragover event
+    // Prevent the default behavior for dragover and drop events on the document
+    document.addEventListener('dragover', (event) => {
+      event.preventDefault();
+    });
+    document.addEventListener('drop', (event) => {
+      event.preventDefault();
+    });
+
+    // Handle the dragover event for the dropzone
     dropzone.addEventListener('dragover', (event) => {
       event.preventDefault();
     });
 
-    // Handle the drop event
+    // Handle the drop event for the dropzone
     dropzone.addEventListener('drop', (event) => {
       event.preventDefault();
 
