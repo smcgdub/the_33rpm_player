@@ -28,6 +28,8 @@ p {
 button {
   background-color: #00FF00;
   color: black;
+  padding: 10px;
+  margin: 5px;
 }
 
 @media (max-width: 600px) {
