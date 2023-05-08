@@ -39,6 +39,9 @@
 
       // Check if the file is an audio file
       if (file.type.startsWith('audio/')) {
+        // Clear any previous messages
+        message.textContent = "";
+
         // Display the file name without the extension
         filename.textContent = file.name.replace(/\.[^/.]+$/, "");
 
@@ -64,6 +67,9 @@
 
       // Check if the file is an audio file
       if (file.type.startsWith('audio/')) {
+        // Clear any previous messages
+        message.textContent = "";
+
         // Display the file name without the extension
         filename.textContent = file.name.replace(/\.[^/.]+$/, "");
 
