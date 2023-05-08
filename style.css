@@ -22,6 +22,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #FFFFFF;
 }
 
 button {
@@ -54,6 +55,14 @@ button {
 }
 
 #fileinput {
-  margin: 10px;
-  padding: 5px;
+  background-color: #00FF00;
+  color: black;
+  padding: 10px;
+  margin: 5px;
 }
+
+/* @media (max-width: 786px) {
+  #fileinput {
+    width: 100%;
+  }
+} */
