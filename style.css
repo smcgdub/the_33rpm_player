@@ -1,20 +1,20 @@
 body {
-  background-color: #F5F5DC;
+  background-color: #F0EAD6;
 }
 
 h1 {
-  color: #6B8E23;
+  color: #8B4513;
 }
 
 p {
-  color: #556B2F;
+  color: #A0522D;
 }
 
 #dropzone {
-  border-color: #6B8E23;
+  border-color: #8B4513;
 }
 
 button {
-  background-color: #6B8E23;
+  background-color: #8B4513;
   color: white;
 }
