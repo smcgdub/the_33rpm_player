@@ -1,5 +1,7 @@
 # **The 33 RPM Player** #
-![]()
+![](/images/am_i_responsive.png)
+
+<hr>
 
 ## **Introduction** ##
 A few years ago somebody uploaded the song Jolene by Dolly Parton that was played on a record player at 33rpm instead of the intended 45rpm, you can listen to that song on YouTube by clicking [here](https://www.youtube.com/watch?v=CMrfM711vXI). 
@@ -172,9 +174,9 @@ To deploy the site on Github i undertook the following steps:
 
 You will then receive a confirmation saying the page has been published and also be provided with the link where people can view your site.
 
-![Image of page published confirmation]()
+The link to view the published site can be found by clicking [Here](https://smcgdub.github.io/the_33rpm_player/)
 
-The link to view the published site can be found by clicking [Here]()
+<hr>
 
 ### **5.2 Cloning** ###
 
@@ -182,21 +184,16 @@ You can clone the projects repository to your local computer by following the st
 
 Cloning a repository using the command line
 
-1. On github navigate to the project repository. The link can be found here:
+1. On github navigate to the project repository. The link can be found here: https://github.com/smcgdub/the_33rpm_player
 2. Click on the tab that says < >code
-3. Above the files, click the button that says ↓code
+3. From the menu select HTTPS
+4. Click on the clipboard icon on the right hand side of the URL
+5. Open the terminal in your IDE
+6. Change the current working directory to the location where you want the cloned directory.
+7. In terminal type git clone and then paste the URL you copied earlier: https://github.com/smcgdub/the_33rpm_player.git
+8. Press Enter to create your local clone
 
-![]()
-
-4. From the menu select HTTPS
-5. Click on the clipboard icon on the right hand side (Image below)
-
-![]()
-
-6. Open the terminal in your IDE
-7. Change the current working directory to the location where you want the cloned directory.
-8. In terminal type git clone and then paste the URL you copied earlier: 
-9. Press Enter to create your local clone
+<hr>
 
 ### **5.3 Cloning Desktop** ###
 
@@ -204,15 +201,11 @@ You can also clone the project using Github Desktop. To do this you can do the f
 
 1. Download Github Desktop if you do not already have it installed. The link can be found here: [GitHub Desktop](https://desktop.github.com/)
 2. Sign in to GitHub and GitHub Desktop before you start to clone.
-3. On github navigate to the project repository. The link can be found here:
-4. Click on the tab that says <details >code
-5. Above the files, click the button that says ↓code
-
-![]()
-
-6. Click open with GitHub Desktop to clone and open the repository with GitHub Desktop.
-7. Click Choose... and, using the Finder window, navigate to a local path where you want to clone the repository
-8. Click clone
+3. On github navigate to the project repository. The link can be found here: https://github.com/smcgdub/the_33rpm_player
+4. Click on the tab that says <>code
+5. Click open with GitHub Desktop to clone and open the repository with GitHub Desktop.
+6. Click Choose... and, using the Finder window, navigate to a local path where you want to clone the repository
+7. Click clone
 
 </details>
 <hr>

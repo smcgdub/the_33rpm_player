@@ -1,5 +1,7 @@
 # **The 33rpm Player Testing Information** #
-![]()
+![](/images/am_i_responsive.png)
+
+<hr>
 
 ### **1. Testing** ###
 
