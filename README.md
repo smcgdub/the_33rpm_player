@@ -262,11 +262,13 @@ Prompt 1: I want to build a website where users can drag an audio file and an au
 +Is there a specific technology or language you prefer to use?
 1 of 24
 
+<hr>
+
 Prompt 2: The user won’t be able to store any music, they will only be able to drag and drop 1 song at a time, so no need for any backend
 
-+In that case, you can build the website using only front-end technologies. You can use HTML, CSS, and JavaScript to create the user interface and handle user interactions such as dragging and dropping an audio file. You can also use JavaScript to process the audio file and play it back at 33rpm using the Web Audio API.
+In that case, you can build the website using only front-end technologies. You can use HTML, CSS, and JavaScript to create the user interface and handle user interactions such as dragging and dropping an audio file. You can also use JavaScript to process the audio file and play it back at 33rpm using the Web Audio API.
 
-+Do you have any experience with these technologies?
+Do you have any experience with these technologies?
 2 of 24
 
 ```diff
