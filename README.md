@@ -254,23 +254,20 @@ This website and all of its content was generated strictly for educational purpo
 
 Below you can see the entire conversation i had with Bing chat to build this project. Text written in green is the response from Bing chat. All of the code generated that you see below was generated from Bing chat. 
 
-```diff
+
 Prompt 1: I want to build a website where users can drag an audio file and an audio player will play the song back at 33rpm. Let’s discuss the tech stack needed to do this
 
 +Sure! To build a website with the functionality you described, you’ll need to use a combination of front-end and back-end technologies. For the front-end, you can use HTML, CSS, and JavaScript to create the user interface and handle user interactions such as dragging and dropping an audio file. For the back-end, you can use a server-side language such as PHP or Node.js to process the audio file and play it back at 33rpm. You’ll also need a web server such as Apache or Nginx to host your website.
 
 +Is there a specific technology or language you prefer to use?
 1 of 24
-```
 
-```diff
 Prompt 2: The user won’t be able to store any music, they will only be able to drag and drop 1 song at a time, so no need for any backend
 
 +In that case, you can build the website using only front-end technologies. You can use HTML, CSS, and JavaScript to create the user interface and handle user interactions such as dragging and dropping an audio file. You can also use JavaScript to process the audio file and play it back at 33rpm using the Web Audio API.
 
 +Do you have any experience with these technologies?
 2 of 24
-```
 
 ```diff
 Prompt 3: Yes I have experience with these. Can you generate the html code for me?
