@@ -256,8 +256,10 @@ Below you can see the entire conversation i had with Bing chat to build this pro
 
 <hr>
 
-Prompt 1: I want to build a website where users can drag an audio file and an audio player will play the song back at 33rpm. Let’s discuss the tech stack needed to do this
+<strong>Prompt 1:</strong><br> 
+I want to build a website where users can drag an audio file and an audio player will play the song back at 33rpm. Let’s discuss the tech stack needed to do this
 
+<strong>Response</strong><br> 
 Sure! To build a website with the functionality you described, you’ll need to use a combination of front-end and back-end technologies. For the front-end, you can use HTML, CSS, and JavaScript to create the user interface and handle user interactions such as dragging and dropping an audio file. For the back-end, you can use a server-side language such as PHP or Node.js to process the audio file and play it back at 33rpm. You’ll also need a web server such as Apache or Nginx to host your website.
 
 Is there a specific technology or language you prefer to use?<br>
@@ -265,18 +267,22 @@ Is there a specific technology or language you prefer to use?<br>
 
 <hr>
 
-Prompt 2: The user won’t be able to store any music, they will only be able to drag and drop 1 song at a time, so no need for any backend
+<strong>Prompt 2:</strong><br> 
+The user won’t be able to store any music, they will only be able to drag and drop 1 song at a time, so no need for any backend
 
+<strong>Response</strong><br> 
 In that case, you can build the website using only front-end technologies. You can use HTML, CSS, and JavaScript to create the user interface and handle user interactions such as dragging and dropping an audio file. You can also use JavaScript to process the audio file and play it back at 33rpm using the Web Audio API.
 
 Do you have any experience with these technologies?<br>
 2 of 24
 
-```diff
-Prompt 3: Yes I have experience with these. Can you generate the html code for me?
+<hr>
 
-+Sure! Here’s a basic HTML template that you can use as a starting point for your website:
-```
+<strong>Prompt 3</strong><br> 
+Yes I have experience with these. Can you generate the html code for me?
+
+<strong>Response</strong><br> 
+Sure! Here’s a basic HTML template that you can use as a starting point for your website:
 
 ```html
 <!DOCTYPE html>
@@ -300,18 +306,18 @@ Prompt 3: Yes I have experience with these. Can you generate the html code for m
 <br>
 Preview of player generated
 
-```diff
-+This template includes a dropzone element where users can drag and drop an audio file, and an audio element to play the file. You’ll need to add your own JavaScript code to handle the drag and drop event and play the audio file at 33rpm.
+This template includes a dropzone element where users can drag and drop an audio file, and an audio element to play the file. You’ll need to add your own JavaScript code to handle the drag and drop event and play the audio file at 33rpm.
 
-+Is there anything else you need help with?
+Is there anything else you need help with?<br>
 3 of 24
-```
 
-```diff
-Prompt 4: OK, now let’s write the JavaScript. When the user drags and drops a song into the player I want the song to start playing at 33rpm automatically. Generate this JavaScript code for me and add it to the html file you generated previously.
+<hr>
 
-+Sure! Here’s the updated HTML template with the added JavaScript code to handle the drag and drop event and play the audio file at 33rpm:
-```
+<strong>Prompt 4</strong><br> 
+OK, now let’s write the JavaScript. When the user drags and drops a song into the player I want the song to start playing at 33rpm automatically. Generate this JavaScript code for me and add it to the html file you generated previously.
+
+<strong>Response</strong><br> 
+Sure! Here’s the updated HTML template with the added JavaScript code to handle the drag and drop event and play the audio file at 33rpm:
 
 ```html
 <!DOCTYPE html>
@@ -356,18 +362,18 @@ Prompt 4: OK, now let’s write the JavaScript. When the user drags and drops a 
 </html>
 ```
 
-```diff
-+This code adds event listeners to the dropzone element to handle the dragover and drop events. When a user drags a file over the dropzone, the dragover event is fired and the default behaviour is prevented. When a user drops a file onto the dropzone, the drop event is fired and the dropped file is read using a FileReader. Once the file is read, its data is set as the source of the audio element and played back at 33rpm using the playbackRate property.
+This code adds event listeners to the dropzone element to handle the dragover and drop events. When a user drags a file over the dropzone, the dragover event is fired and the default behaviour is prevented. When a user drops a file onto the dropzone, the drop event is fired and the dropped file is read using a FileReader. Once the file is read, its data is set as the source of the audio element and played back at 33rpm using the playbackRate property.
 
-+Is there anything else you need help with?
+Is there anything else you need help with?<br>
 4 of 24
-```
 
-```diff
-Prompt 5: I also want the name of the file to be displayed below the player. Generate this code for me and add it to the code
+<hr>
 
-+Sure! Here’s the updated HTML template with the added code to display the name of the dropped file below the player:
-```
+<strong>Prompt 5</strong><br> 
+I also want the name of the file to be displayed below the player. Generate this code for me and add it to the code
+
+<strong>Response</strong><br> 
+Sure! Here’s the updated HTML template with the added code to display the name of the dropped file below the player:
 
 ```html
 <!DOCTYPE html>
@@ -421,18 +427,18 @@ Prompt 5: I also want the name of the file to be displayed below the player. Gen
 <br>
 Preview of player generated
 
-```diff
-+This code adds a new p element with the id of filename to display the name of the dropped file. When a user drops a file onto the dropzone, the drop event is fired and the name of the dropped file is set as the text content of the filename element.
+This code adds a new p element with the id of filename to display the name of the dropped file. When a user drops a file onto the dropzone, the drop event is fired and the name of the dropped file is set as the text content of the filename element.
 
-+Is there anything else you need help with?
+Is there anything else you need help with?<br>
 5 of 24
-```
 
-```diff
-Prompt 6: Let’s add a fast-forward button and a rewind button so a user can fast-forward and rewind the song. I don’t want these buttons to skip to the next song, they just fast forward or rewind the current song
+<hr>
 
-+Sure! Here’s the updated HTML template with the added code to include fast forward and rewind buttons:
-```
+<strong>Prompt 6</strong><br> 
+Let’s add a fast-forward button and a rewind button so a user can fast-forward and rewind the song. I don’t want these buttons to skip to the next song, they just fast forward or rewind the current song
+
+<strong>Response</strong><br> 
+Sure! Here’s the updated HTML template with the added code to include fast forward and rewind buttons:
 
 ```html
 <!DOCTYPE html>
@@ -500,19 +506,18 @@ Prompt 6: Let’s add a fast-forward button and a rewind button so a user can fa
 <br>
 Preview of player generated
 
+This code adds two new button elements with the ids of rewind and fastforward to allow users to rewind or fast forward the audio by 10 seconds. When a user clicks on one of these buttons, the currentTime property of the audio element is updated to move the playback position backward or forward by 10 seconds.
 
-```diff
-+This code adds two new button elements with the ids of rewind and fastforward to allow users to rewind or fast forward the audio by 10 seconds. When a user clicks on one of these buttons, the currentTime property of the audio element is updated to move the playback position backward or forward by 10 seconds.
-
-+Is there anything else you need help with?
+Is there anything else you need help with?<br>
 6 of 24
-```
 
-```diff
-Prompt 7: Now let’s add an upload button to the player for mobile users who are not able to drag and drop. Add an upload button that will allow users to select a song from their device and once selected the song will automatically start to play. Add this to the previous code you generated
+<hr>
 
-+Sure! Here’s the updated HTML template with the added code to include an upload button for mobile users:
-```
+<strong>Prompt 7</strong><br> 
+Now let’s add an upload button to the player for mobile users who are not able to drag and drop. Add an upload button that will allow users to select a song from their device and once selected the song will automatically start to play. Add this to the previous code you generated
+
+<strong>Response</strong><br> 
+Sure! Here’s the updated HTML template with the added code to include an upload button for mobile users:
 
 ```html
 <!DOCTYPE html>
@@ -601,18 +606,18 @@ Prompt 7: Now let’s add an upload button to the player for mobile users who ar
 <br>
 Preview of player generated
 
-```diff
-+This code adds a new input element with the type of file and the id of fileinput to allow mobile users to select an audio file from their device. When a user selects a file using this input, the change event is fired and the selected file is read using a FileReader. Once the file is read, its data is set as the source of the audio element and played back at 33rpm using the playbackRate property.
+This code adds a new input element with the type of file and the id of fileinput to allow mobile users to select an audio file from their device. When a user selects a file using this input, the change event is fired and the selected file is read using a FileReader. Once the file is read, its data is set as the source of the audio element and played back at 33rpm using the playbackRate property.
 
-+Is there anything else you need help with?
+Is there anything else you need help with?<br>
 7 of 24
-```
 
-```diff
-Prompt 8: When a user uploads a song, the file type is being displayed as well as the file name. For example when I uploaded the song crazy by gnarls barkley, what was displayed is crazy.mp3 I don’t want this to happen, what I want to display is just the file/song name and not the file type. Adjust the code you last generated to achieve this
+<hr>
 
-+Sure! Here’s the updated HTML template with the added code to display only the file name without the file extension:
-```
+<strong>Prompt 8</strong><br> 
+When a user uploads a song, the file type is being displayed as well as the file name. For example when I uploaded the song crazy by gnarls barkley, what was displayed is crazy.mp3 I don’t want this to happen, what I want to display is just the file/song name and not the file type. Adjust the code you last generated to achieve this
+
+<strong>Response</strong><br> 
+Sure! Here’s the updated HTML template with the added code to display only the file name without the file extension:
 
 ```html
 <!DOCTYPE html>
@@ -701,20 +706,20 @@ Prompt 8: When a user uploads a song, the file type is being displayed as well a
 <br>
 Preview of player generated
 
-```diff
-+This code updates the drop and change event handlers to display only the file name without the file extension. When a user drops or selects a file, its name is extracted using a regular expression to remove the file extension before setting it as the text content of the filename element.
+This code updates the drop and change event handlers to display only the file name without the file extension. When a user drops or selects a file, its name is extracted using a regular expression to remove the file extension before setting it as the text content of the filename element.
 
-+Is there anything else you need help with?
+Is there anything else you need help with?<br>
 8 of 24 
-```
 
-```diff
-Prompt 9. Is there a way we can check if the user is dropping or uploading a none audio file? If so how do we check this? And if it’s not an audio file that the player can play, can we generate a message to the user to say "Sorry the type of file you are trying to load cannot be played in this player"
+<hr>
 
-+Yes, it is possible to check if the user is dropping or uploading a non-audio file. You can do this by checking the type property of the dropped or selected file to see if it starts with audio/. If the file is not an audio file, you can display a message to the user to let them know that the file cannot be played.
+<strong>Prompt 9</strong><br> 
+Is there a way we can check if the user is dropping or uploading a none audio file? If so how do we check this? And if it’s not an audio file that the player can play, can we generate a message to the user to say "Sorry the type of file you are trying to load cannot be played in this player"
 
-+Here’s the updated HTML template with the added code to check if the dropped or selected file is an audio file and display a message if it’s not:
-```
+<strong>Response</strong><br>
+Yes, it is possible to check if the user is dropping or uploading a non-audio file. You can do this by checking the type property of the dropped or selected file to see if it starts with audio/. If the file is not an audio file, you can display a message to the user to let them know that the file cannot be played.
+
+Here’s the updated HTML template with the added code to check if the dropped or selected file is an audio file and display a message if it’s not
 
 ```html
 <!DOCTYPE html>
@@ -817,18 +822,18 @@ Prompt 9. Is there a way we can check if the user is dropping or uploading a non
 <br>
 Preview of player generated
 
-```diff
-+This code updates the drop and change event handlers to check if the dropped or selected file is an audio file by checking its type property. If the file is not an audio file, a message is displayed to let the user know that it cannot be played.
+This code updates the drop and change event handlers to check if the dropped or selected file is an audio file by checking its type property. If the file is not an audio file, a message is displayed to let the user know that it cannot be played.
 
-+Is there anything else you need help with?
+Is there anything else you need help with?<br>
 9 of 24
-```
 
-```diff
-Prompt 10: If the user tries to upload a none audio file then the error message is displaying correctly. However, if the user then uploads a correct audio file, the previous error message is still displaying. Adjust the code we are using so if the user uploads an audio file after trying to upload a none audio file, the message that error message that displays "Sorry, the type of file you are trying to load cannot be played in this player." is removed
+<hr>
 
-+Sure! Here’s the updated HTML template with the added code to remove the error message when the user uploads a valid audio file after trying to upload a non-audio file:
-```
+<strong>Prompt 10</strong><br> 
+If the user tries to upload a none audio file then the error message is displaying correctly. However, if the user then uploads a correct audio file, the previous error message is still displaying. Adjust the code we are using so if the user uploads an audio file after trying to upload a none audio file, the message that error message that displays "Sorry, the type of file you are trying to load cannot be played in this player." is removed
+
+<strong>Response</strong><br> 
+Sure! Here’s the updated HTML template with the added code to remove the error message when the user uploads a valid audio file after trying to upload a non-audio file:
 
 ```html
 <!DOCTYPE html>
@@ -937,20 +942,20 @@ Prompt 10: If the user tries to upload a none audio file then the error message 
 <br>
 Preview of player generated
 
-```diff
-+This code updates the drop and change event handlers to clear any previous error messages when a valid audio file is dropped or selected. If a user drops or selects an audio file after trying to upload a non-audio file, any previous error messages are removed by setting the text content of the message element to an empty string.
+This code updates the drop and change event handlers to clear any previous error messages when a valid audio file is dropped or selected. If a user drops or selects an audio file after trying to upload a non-audio file, any previous error messages are removed by setting the text content of the message element to an empty string.
 
-+Is there anything else you need help with?
+Is there anything else you need help with?<br>
 10 of 24
-```
 
-```diff
-Prompt 11: If the user drags an audio file and drops it outside of the dropzone then the song will open in a new tab in the browser and play at normal speed. Can we disable this so if the user drags and drops a file outside of the dropzone nothing happens
+<hr>
 
-+Yes, it is possible to prevent the default behavior of the browser when a user drags and drops a file outside of the dropzone. You can do this by adding an event listener to the document object to handle the dragover and drop events and prevent their default behavior.
+<strong>Prompt 11</strong><br> 
+If the user drags an audio file and drops it outside of the dropzone then the song will open in a new tab in the browser and play at normal speed. Can we disable this so if the user drags and drops a file outside of the dropzone nothing happens
 
-+Here’s the updated HTML template with the added code to prevent the default behavior of the browser when a user drags and drops a file outside of the dropzone:
-```
+<strong>Response</strong><br> 
+Yes, it is possible to prevent the default behavior of the browser when a user drags and drops a file outside of the dropzone. You can do this by adding an event listener to the document object to handle the dragover and drop events and prevent their default behavior.
+
+Here’s the updated HTML template with the added code to prevent the default behavior of the browser when a user drags and drops a file outside of the dropzone:
 
 ```html
 <!DOCTYPE html>
@@ -1063,25 +1068,26 @@ Prompt 11: If the user drags an audio file and drops it outside of the dropzone 
 </html>
 ```
 
-```diff
-+This code adds two new event listeners to handle dragover and drop events on document. When a user drags a file over or drops a file onto any part of document, these events are fired and their default behavior is prevented.
+This code adds two new event listeners to handle dragover and drop events on document. When a user drags a file over or drops a file onto any part of document, these events are fired and their default behavior is prevented.
 
-+Is there anything else you need help with?
+Is there anything else you need help with?<br>
 11 of 24
-```
+
+<hr>
 
 <strong>CSS Prompts:</strong>
 
-```diff
-Prompt 12: I want you to help me style a html file and generate some CSS to make the page nice looking and mobile responsive. Can you help me do this?
+<strong>Prompt 12</strong><br> 
+I want you to help me style a html file and generate some CSS to make the page nice looking and mobile responsive. Can you help me do this?
 
-+Sure! I can help you with that. Do you have any specific design or layout in mind for your page?
+<strong>Response</strong><br> 
+Sure! I can help you with that. Do you have any specific design or layout in mind for your page?<br>
 12 of 24
-```
 
-```diff
-Prompt 13: The html code is below: 
-```
+<hr>
+
+<strong>Prompt 13</strong><br> 
+The html code is below: 
 
 ```html
 <!DOCTYPE html>
@@ -1103,11 +1109,10 @@ Prompt 13: The html code is below:
 </html>
 ```
 
-```diff
 I want all elements cantered on the page both horizontally and vertically. I also want the page to be mobile responsive so it adjusts to the users screen size. We can work on colours after we do this.
 
-+Sure! Here’s some CSS code that you can add to your HTML file to centre all elements on the page both horizontally and vertically and make the page mobile responsive:
-```
+<strong>Response</strong><br> 
+Sure! Here’s some CSS code that you can add to your HTML file to centre all elements on the page both horizontally and vertically and make the page mobile responsive:
 
 ```css
 body {
@@ -1125,20 +1130,20 @@ body {
 }
 ```
 
-```diff
-+You can add this code within a <style> tag in the <head> section of your HTML file. Let me know if you have any questions or if there’s anything else I can help with!
-13of24
-```
+You can add this code within a `<style>` tag in the `<head>` section of your HTML file. Let me know if you have any questions or if there’s anything else I can help with!<br>
+13 of 24
 
 ![](/images/5.png)
 <br>
 Preview of player generated
 
-```diff
-Prompt 14: Make the fast forward and rewind buttons 100% width on mobile devices
+<hr>
 
-+Sure! You can add the following CSS code to make the fast forward and rewind buttons 100% width on mobile devices:
-```
+<strong>Prompt 14</strong><br> 
+Make the fast forward and rewind buttons 100% width on mobile devices
+
+<strong>Response</strong><br> 
+Sure! You can add the following CSS code to make the fast forward and rewind buttons 100% width on mobile devices:
 
 ```css
 @media (max-width: 600px) {
@@ -1148,18 +1153,17 @@ Prompt 14: Make the fast forward and rewind buttons 100% width on mobile devices
 }
 ```
 
-```diff
-+You can add this code to the existing CSS code within the <style> tag in the <head> section of your HTML file. Let me know if you have any questions or if there’s anything else I can help with!
-14of24
-```
+You can add this code to the existing CSS code within the `<style>` tag in the `<head>` section of your HTML file. Let me know if you have any questions or if there’s anything else I can help with!<br>
+14 of 24
 
 ![](/images/6.png)
 <br>
 Preview of player generated
 
-```diff
-Prompt 15: I have adjusted the code, we are now using the code below: 
-```
+<hr>
+
+<strong>Prompt 15</strong><br> 
+I have adjusted the code, we are now using the code below: 
 
 ```css
 body {
@@ -1187,11 +1191,10 @@ body {
 }
 ```
 
-```diff
 I want you to change the colour scheme of the page so it’s not just white and grey. Give the page a colour scheme that would be engaging for users. I want the page to have a chilled and relaxed feel
 
-+Sure! Here’s some CSS code that you can add to your existing CSS code to give the page a chilled and relaxed feel with a color scheme that’s engaging for users:
-```
+<strong>Response</strong><br> 
+Sure! Here’s some CSS code that you can add to your existing CSS code to give the page a chilled and relaxed feel with a color scheme that’s engaging for users:
 
 ```css
 body {
@@ -1220,14 +1223,13 @@ button {
 <br>
 Preview of player generated
 
-```diff
-+This code will give your page a beige background with green accents. You can adjust the colors to your liking by changing the values of the background-color, color, and border-color properties. Let me know if you have any questions or if there’s anything else I can help with!
-15of24
-```
+This code will give your page a beige background with green accents. You can adjust the colors to your liking by changing the values of the background-color, color, and border-color properties. Let me know if you have any questions or if there’s anything else I can help with!<br>
+15 of 24
 
-```diff
-Prompt 16: No I don’t like that colour scheme. Try another one. I also want you to keep all of the CSS code below. You can add the colour scheme to this code: 
-```
+<hr>
+
+<strong>Prompt 16:</strong><br> 
+No I don’t like that colour scheme. Try another one. I also want you to keep all of the CSS code below. You can add the colour scheme to this code: 
 
 ```css
 body {
@@ -1255,9 +1257,8 @@ body {
 }
 ```
 
-```diff
-+Sure! Here’s another colour scheme that you can try for your page:
-```
+<strong>Response</strong><br> 
+Sure! Here’s another colour scheme that you can try for your page:
 
 ```css
 body {
@@ -1282,18 +1283,18 @@ button {
 }
 ```
 
-```diff
-+This code will give your page a light brown background with dark brown accents. You can add this code to your existing CSS code to apply the new colour scheme. Let me know if you have any questions or if there’s anything else I can help with!
-16of24
-```
+
+This code will give your page a light brown background with dark brown accents. You can add this code to your existing CSS code to apply the new colour scheme. Let me know if you have any questions or if there’s anything else I can help with!<br>
+16 of 24
 
 ![](/images/9.png)
 <br>
 Preview of player generated
 
-```diff
-Prompt 17. No I don’t like that colour either. Maybe use something blue. Also I want you to keep all the CSS code below and add the new colour scheme to this code: 
-```
+<hr>
+
+<strong>Prompt 17</strong><br> 
+No I don’t like that colour either. Maybe use something blue. Also I want you to keep all the CSS code below and add the new colour scheme to this code: 
 
 ```css
 body {
@@ -1321,9 +1322,8 @@ body {
 }
 ```
 
-```diff
-+Sure! Here’s a colour scheme that incorporates blue that you can try for your page:
-```
+<strong>Response</strong><br> 
+Sure! Here’s a colour scheme that incorporates blue that you can try for your page:
 
 ```css
 body {
@@ -1352,14 +1352,13 @@ button {
 <br>
 Preview of player generated
 
-```diff
-+This code will give your page a light lavender background with blue accents. You can add this code to your existing CSS code to apply the new colour scheme. Let me know if you have any questions or if there’s anything else I can help with!
-17of24
-```
+This code will give your page a light lavender background with blue accents. You can add this code to your existing CSS code to apply the new colour scheme. Let me know if you have any questions or if there’s anything else I can help with!<br>
+17 of 24
 
-```diff
-Prompt 18: You removed this code I entered below: 
-```
+<hr>
+
+<strong>Prompt 18</strong><br> 
+You removed this code I entered below: 
 
 ```css
 body {
@@ -1384,11 +1383,10 @@ button {
 }
 ```
 
-```diff
 Add your code into the code above so they are merged
 
-+My apologies for any confusion. Here is the complete CSS code that includes both the colour scheme and the other styles you mentioned:
-```
+<strong>Response</strong><br> 
+My apologies for any confusion. Here is the complete CSS code that includes both the colour scheme and the other styles you mentioned:
 
 ```css
 body {
@@ -1433,28 +1431,26 @@ button {
 }
 ```
 
-```diff
-+This code includes both the color scheme and the other styles you mentioned, such as centering all elements on the page and making the page mobile responsive. You can replace your existing CSS code with this code to apply all of the styles. Let me know if you have any questions or if there’s anything else I can help with!
+This code includes both the color scheme and the other styles you mentioned, such as centering all elements on the page and making the page mobile responsive. You can replace your existing CSS code with this code to apply all of the styles. Let me know if you have any questions or if there’s anything else I can help with!<br>
 18 of 24
-```
 
 ![](/images/11.png)
 <br>
 Preview of player generated
 
-```diff
-Prompt 19:  In the html code, the dropzone has some text written inside the div that says Drop your song here. The code is below: 
-```
+<hr>
+
+<strong>Prompt 19</strong><br> 
+In the html code, the dropzone has some text written inside the div that says Drop your song here. The code is below: 
 
 ```html
 <div id="dropzone" style="width: 300px; height: 100px; border: 2px dashed #ccc;">Drop your song here</div>
 ```
 
-```diff
 I want the test to be centred in the dropzone, at the moment it is written in the top left hand corner. Can you adjust the code so its centred inside the dropzone bother horizontally and vertically
 
-+Sure! You can centre the text inside the #dropzone element both horizontally and vertically by adding the following CSS code:
-```
+<strong>Response</strong><br> 
+Sure! You can centre the text inside the #dropzone element both horizontally and vertically by adding the following CSS code:
 
 ```css
 #dropzone {
@@ -1464,20 +1460,21 @@ I want the test to be centred in the dropzone, at the moment it is written in th
 }
 ```
 
-```diff
-+This code will centre the text inside the #dropzone element by using flexbox. You can add this code to your existing CSS code to apply the new style. Let me know if you have any questions or if there’s anything else I can help with!
+
++This code will centre the text inside the #dropzone element by using flexbox. You can add this code to your existing CSS code to apply the new style. Let me know if you have any questions or if there’s anything else I can help with!<br>
 19 of 24
-```
 
 ![](/images/12.png)
 <br>
 Preview of player generated
 
-```diff
-Prompt 20: Lets change up the colour scheme as I don’t like it. Change the colour scheme via CSS to one of black, dark grey, and bright green.
+<hr>
 
-+Sure! Here’s a colour scheme that incorporates black, dark grey, and bright green that you can try for your page:
-```
+<strong>Prompt 20</strong><br> 
+Lets change up the colour scheme as I don’t like it. Change the colour scheme via CSS to one of black, dark grey, and bright green.
+
+<strong>Response</strong><br> 
+Sure! Here’s a colour scheme that incorporates black, dark grey, and bright green that you can try for your page:
 
 ```css
 body {
@@ -1502,18 +1499,17 @@ button {
 }
 ```
 
-```diff
-+This code will give your page a dark grey background with bright green accents and white text. You can add this code to your existing CSS code to apply the new colour scheme. Let me know if you have any questions or if there’s anything else I can help with!
+This code will give your page a dark grey background with bright green accents and white text. You can add this code to your existing CSS code to apply the new colour scheme. Let me know if you have any questions or if there’s anything else I can help with!<br>
 20 of 24
-```
 
 ![](/images/13.png)
 <br>
 Preview of player generated
 
-```diff
-Prompt 21. Merge the CSS code you just generated to the CSS I am already using below 
-```
+<hr>
+
+<strong>Prompt 21</strong><br> 
+Merge the CSS code you just generated to the CSS I am already using below 
 
 ```css
 body {
@@ -1561,9 +1557,8 @@ button {
 }
 ```
 
-```diff
-+Sure! Here is the complete CSS code that includes both the new colour scheme and the other styles you mentioned:
-```
+<strong>Response</strong><br> 
+Sure! Here is the complete CSS code that includes both the new colour scheme and the other styles you mentioned:
 
 ```css
 body {
@@ -1611,20 +1606,20 @@ button {
 }
 ```
 
-```diff
-+This code includes both the new colour scheme and the other styles you mentioned, such as centring all elements on the page and making the page mobile responsive. You can replace your existing CSS code with this code to apply all of the styles. Let me know if you have any questions or if there’s anything else I can help with!
+This code includes both the new colour scheme and the other styles you mentioned, such as centring all elements on the page and making the page mobile responsive. You can replace your existing CSS code with this code to apply all of the styles. Let me know if you have any questions or if there’s anything else I can help with!<br>
 21 of 24
-```
 
 ![](/images/14.png)
 <br>
 Preview of player generated
 
-```diff
-Prompt 22: Can we change the html and CSS so on desktop computers the fast forward and rewind buttons are side by side on the same row. And on mobile devices they change to be stacked on top of each other. The breakpoint to enable this change is 786px
+<hr>
 
-+Sure! You can achieve this by wrapping the #rewind and #fastforward buttons in a div element and adding the following CSS code:
-```
+<strong>Prompt 22</strong><br> 
+Can we change the html and CSS so on desktop computers the fast forward and rewind buttons are side by side on the same row. And on mobile devices they change to be stacked on top of each other. The breakpoint to enable this change is 786px
+
+<strong>Response</strong><br> 
+Sure! You can achieve this by wrapping the #rewind and #fastforward buttons in a div element and adding the following CSS code:
 
 ```html
 <div id="button-container">
@@ -1646,10 +1641,8 @@ Prompt 22: Can we change the html and CSS so on desktop computers the fast forwa
 }
 ```
 
-```diff
-+This code will display the #rewind and #fastforward buttons side by side on the same row on desktop computers and stack them on top of each other on mobile devices with a screen width of 786px or less. You can add this code to your existing HTML and CSS code to apply the new styles. Let me know if you have any questions or if there’s anything else I can help with!
+This code will display the #rewind and #fastforward buttons side by side on the same row on desktop computers and stack them on top of each other on mobile devices with a screen width of 786px or less. You can add this code to your existing HTML and CSS code to apply the new styles. Let me know if you have any questions or if there’s anything else I can help with!<br>
 22 of 24
-```
 
 ![](/images/15.png)
 <br>
@@ -1661,17 +1654,17 @@ Preview of player generated
 <br>
 Preview of player generated (Buttons side by side)
 
-```diff
-Prompt 23: Add some margin and padding to this element of html so it’s not so close to the other elements. 
-```
+<hr>
+
+<strong>Prompt 23</strong><br> 
+Add some margin and padding to this element of html so it’s not so close to the other elements. 
 
 ```html
 <input type="file" id="fileinput" accept="audio/*">
 ```
 
-```diff
-+Sure! You can add some margin and padding to the #fileinput element by adding the following CSS code:
-```
+<strong>Response</strong><br> 
+Sure! You can add some margin and padding to the #fileinput element by adding the following CSS code:
 
 ```css
 #fileinput {
@@ -1680,26 +1673,24 @@ Prompt 23: Add some margin and padding to this element of html so it’s not so 
 }
 ```
 
-```diff
-+This code will add 10px of margin and 5px of padding to the #fileinput element, which will create some space between it and the other elements on the page. You can adjust the values of the margin and padding properties to your liking. You can add this code to your existing CSS code to apply the new style. Let me know if you have any questions or if there’s anything else I can help with!
+This code will add 10px of margin and 5px of padding to the #fileinput element, which will create some space between it and the other elements on the page. You can adjust the values of the margin and padding properties to your liking. You can add this code to your existing CSS code to apply the new style. Let me know if you have any questions or if there’s anything else I can help with!<br>
 23 of 24
-```
 
 ![](/images/16.png)
 <br>
 Preview of player generated
 
-```diff
-Prompt 24: Change the CSS so this element has the same CSS as the fast-forward and rewind buttons.
-```
+<hr>
+
+<strong>Prompt 24</strong><br> 
+Change the CSS so this element has the same CSS as the fast-forward and rewind buttons.
 
 ```html
 <input type="file" id="fileinput" accept="audio/*">
 ```
 
-```diff
-+Sure! You can apply the same styles to the #fileinput element a the #rewind and #fastforward buttons by adding the following CSS code:
-```
+<strong>Response</strong><br> 
+Sure! You can apply the same styles to the #fileinput element a the #rewind and #fastforward buttons by adding the following CSS code:
 
 ```css
 #fileinput {
@@ -1716,10 +1707,8 @@ Prompt 24: Change the CSS so this element has the same CSS as the fast-forward a
 }
 ```
 
-```diff
-+This code will apply the same background colour, text colour, padding, and margin to the #fileinput element as the #rewind and #fastforward buttons. It will also make the #fileinput element 100% width on mobile devices with a screen width of 786px or less. You can add this code to your existing CSS code to apply the new styles. Let me know if you have any questions or if there’s anything else I can help with!
+This code will apply the same background colour, text colour, padding, and margin to the #fileinput element as the #rewind and #fastforward buttons. It will also make the #fileinput element 100% width on mobile devices with a screen width of 786px or less. You can add this code to your existing CSS code to apply the new styles. Let me know if you have any questions or if there’s anything else I can help with!<br>
 24 of 24
-```
 
 ![](/images/17.png)
 <br>
