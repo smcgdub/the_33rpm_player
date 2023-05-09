@@ -1130,12 +1130,12 @@ body {
 }
 ```
 
-You can add this code within a `<style>` tag in the `<head>` section of your HTML file. Let me know if you have any questions or if there’s anything else I can help with!<br>
-13 of 24
-
 ![](/images/5.png)
 <br>
 Preview of player generated
+
+You can add this code within a `<style>` tag in the `<head>` section of your HTML file. Let me know if you have any questions or if there’s anything else I can help with!<br>
+13 of 24
 
 <hr>
 
@@ -1153,12 +1153,12 @@ Sure! You can add the following CSS code to make the fast forward and rewind but
 }
 ```
 
-You can add this code to the existing CSS code within the `<style>` tag in the `<head>` section of your HTML file. Let me know if you have any questions or if there’s anything else I can help with!<br>
-14 of 24
-
 ![](/images/6.png)
 <br>
 Preview of player generated
+
+You can add this code to the existing CSS code within the `<style>` tag in the `<head>` section of your HTML file. Let me know if you have any questions or if there’s anything else I can help with!<br>
+14 of 24
 
 <hr>
 
@@ -1283,13 +1283,12 @@ button {
 }
 ```
 
-
-This code will give your page a light brown background with dark brown accents. You can add this code to your existing CSS code to apply the new colour scheme. Let me know if you have any questions or if there’s anything else I can help with!<br>
-16 of 24
-
 ![](/images/9.png)
 <br>
 Preview of player generated
+
+This code will give your page a light brown background with dark brown accents. You can add this code to your existing CSS code to apply the new colour scheme. Let me know if you have any questions or if there’s anything else I can help with!<br>
+16 of 24
 
 <hr>
 
@@ -1431,12 +1430,12 @@ button {
 }
 ```
 
-This code includes both the color scheme and the other styles you mentioned, such as centering all elements on the page and making the page mobile responsive. You can replace your existing CSS code with this code to apply all of the styles. Let me know if you have any questions or if there’s anything else I can help with!<br>
-18 of 24
-
 ![](/images/11.png)
 <br>
 Preview of player generated
+
+This code includes both the color scheme and the other styles you mentioned, such as centering all elements on the page and making the page mobile responsive. You can replace your existing CSS code with this code to apply all of the styles. Let me know if you have any questions or if there’s anything else I can help with!<br>
+18 of 24
 
 <hr>
 
@@ -1460,13 +1459,12 @@ Sure! You can centre the text inside the #dropzone element both horizontally and
 }
 ```
 
-
-+This code will centre the text inside the #dropzone element by using flexbox. You can add this code to your existing CSS code to apply the new style. Let me know if you have any questions or if there’s anything else I can help with!<br>
-19 of 24
-
 ![](/images/12.png)
 <br>
 Preview of player generated
+
+This code will centre the text inside the #dropzone element by using flexbox. You can add this code to your existing CSS code to apply the new style. Let me know if you have any questions or if there’s anything else I can help with!<br>
+19 of 24
 
 <hr>
 
@@ -1499,12 +1497,12 @@ button {
 }
 ```
 
-This code will give your page a dark grey background with bright green accents and white text. You can add this code to your existing CSS code to apply the new colour scheme. Let me know if you have any questions or if there’s anything else I can help with!<br>
-20 of 24
-
 ![](/images/13.png)
 <br>
 Preview of player generated
+
+This code will give your page a dark grey background with bright green accents and white text. You can add this code to your existing CSS code to apply the new colour scheme. Let me know if you have any questions or if there’s anything else I can help with!<br>
+20 of 24
 
 <hr>
 
@@ -1606,12 +1604,12 @@ button {
 }
 ```
 
-This code includes both the new colour scheme and the other styles you mentioned, such as centring all elements on the page and making the page mobile responsive. You can replace your existing CSS code with this code to apply all of the styles. Let me know if you have any questions or if there’s anything else I can help with!<br>
-21 of 24
-
 ![](/images/14.png)
 <br>
 Preview of player generated
+
+This code includes both the new colour scheme and the other styles you mentioned, such as centring all elements on the page and making the page mobile responsive. You can replace your existing CSS code with this code to apply all of the styles. Let me know if you have any questions or if there’s anything else I can help with!<br>
+21 of 24
 
 <hr>
 
@@ -1641,9 +1639,6 @@ Sure! You can achieve this by wrapping the #rewind and #fastforward buttons in a
 }
 ```
 
-This code will display the #rewind and #fastforward buttons side by side on the same row on desktop computers and stack them on top of each other on mobile devices with a screen width of 786px or less. You can add this code to your existing HTML and CSS code to apply the new styles. Let me know if you have any questions or if there’s anything else I can help with!<br>
-22 of 24
-
 ![](/images/15.png)
 <br>
 Preview of player generated
@@ -1653,6 +1648,9 @@ Preview of player generated
 ![](/images/15.1.png)
 <br>
 Preview of player generated (Buttons side by side)
+
+This code will display the #rewind and #fastforward buttons side by side on the same row on desktop computers and stack them on top of each other on mobile devices with a screen width of 786px or less. You can add this code to your existing HTML and CSS code to apply the new styles. Let me know if you have any questions or if there’s anything else I can help with!<br>
+22 of 24
 
 <hr>
 
@@ -1673,12 +1671,12 @@ Sure! You can add some margin and padding to the #fileinput element by adding th
 }
 ```
 
-This code will add 10px of margin and 5px of padding to the #fileinput element, which will create some space between it and the other elements on the page. You can adjust the values of the margin and padding properties to your liking. You can add this code to your existing CSS code to apply the new style. Let me know if you have any questions or if there’s anything else I can help with!<br>
-23 of 24
-
 ![](/images/16.png)
 <br>
 Preview of player generated
+
+This code will add 10px of margin and 5px of padding to the #fileinput element, which will create some space between it and the other elements on the page. You can adjust the values of the margin and padding properties to your liking. You can add this code to your existing CSS code to apply the new style. Let me know if you have any questions or if there’s anything else I can help with!<br>
+23 of 24
 
 <hr>
 
@@ -1707,9 +1705,6 @@ Sure! You can apply the same styles to the #fileinput element a the #rewind and 
 }
 ```
 
-This code will apply the same background colour, text colour, padding, and margin to the #fileinput element as the #rewind and #fastforward buttons. It will also make the #fileinput element 100% width on mobile devices with a screen width of 786px or less. You can add this code to your existing CSS code to apply the new styles. Let me know if you have any questions or if there’s anything else I can help with!<br>
-24 of 24
-
 ![](/images/17.png)
 <br>
 Preview of player generated
@@ -1719,6 +1714,10 @@ At this point i did a small rearranging of the HTML code so the error message ap
 ![](/images/19.png)
 <br>
 Preview of player generated
+
+This code will apply the same background colour, text colour, padding, and margin to the #fileinput element as the #rewind and #fastforward buttons. It will also make the #fileinput element 100% width on mobile devices with a screen width of 786px or less. You can add this code to your existing CSS code to apply the new styles. Let me know if you have any questions or if there’s anything else I can help with!<br>
+24 of 24
+
 </details>
 
 <hr>
