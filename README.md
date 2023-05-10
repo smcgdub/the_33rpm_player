@@ -91,11 +91,11 @@ As a visitor to The 33RPM Player I want to be able to upload a song and hear it 
 
 ### **1.4 - Design Choices** ###
 
-As i made this project completely using prompts in Bing chat i decided i would make any design choices in advance and decide on things as i go. 
+As i made this project completely using prompts in Bing chat i decided i would not make any design choices in advance and decide on the design choices as i go. 
 
 **COLOURS**
 
-I would prompt Bing chat with different requests as the project progressed and then use the responses to help me decide on the design choices.
+I would prompt Bing chat with different requests as the project progressed and see what colour schemes the chat bot could come up with as we went through the CSS part of the project.
 
 </details>
 
@@ -111,12 +111,11 @@ The clearly marked drop zone is where desktop users must drag the audio file the
 
 ### **2.2 - Upload file** ###
 
-For mobile users who don't have the drag and drop functionality they can click on the upload file button and select the file they wish to listen to at 33rpm.
+For mobile users who don't have drag and drop functionality, they can click on the upload file button and select the audio file they wish to listen to at 33rpm.
 
 ### **2.3 - The player** ###
 
 A standard HTML player that Bing chat generated when i gave it the prompt.
-
 
 ### **2.4 - Fast Forward & Rewind Buttons** ###
 
@@ -169,12 +168,11 @@ To deploy the site on Github i undertook the following steps:
 3. Clicked on settings
 4. Scroll down to the Github pages section
 5. Click where is says source and in the dropdown menu select master
-6. Click on the next dropdown menu to the right select /(root)
-7. Click save
+6. Click save
 
 You will then receive a confirmation saying the page has been published and also be provided with the link where people can view your site.
 
-The link to view the published site can be found by clicking [Here](https://smcgdub.github.io/the_33rpm_player/)
+The link to view the published site for this project can be found by clicking [Here](https://smcgdub.github.io/the_33rpm_player/)
 
 <hr>
 
@@ -185,12 +183,12 @@ You can clone the projects repository to your local computer by following the st
 Cloning a repository using the command line
 
 1. On github navigate to the project repository. The link can be found here: https://github.com/smcgdub/the_33rpm_player
-2. Click on the tab that says < >code
+2. Click on the button that says < >code
 3. From the menu select HTTPS
 4. Click on the clipboard icon on the right hand side of the URL
 5. Open the terminal in your IDE
 6. Change the current working directory to the location where you want the cloned directory.
-7. In terminal type git clone and then paste the URL you copied earlier: https://github.com/smcgdub/the_33rpm_player.git
+7. In terminal type `git clone` and then paste the URL you copied earlier: https://github.com/smcgdub/the_33rpm_player.git
 8. Press Enter to create your local clone
 
 <hr>
@@ -216,7 +214,7 @@ You can also clone the project using Github Desktop. To do this you can do the f
 
 ### **6.1 Code** ###
 
-All of the code for the project was generated using Bing chat powered by ChatGPT. The number of adjustments i made myself to the code can be counted on 1 hand
+All of the code for the project was generated using Bing chat powered by ChatGPT. I made only a handful of adjustments to the code myself. 
 
 </details>
 
@@ -245,7 +243,7 @@ This website and all of its content was generated strictly for educational purpo
 <summary>9. Prompts and code</summary>
 <br>
 
-Below you can see the entire conversation i had with Bing chat to build this project. Text written in green is the response from Bing chat. All of the code generated that you see below was generated from Bing chat. 
+Below you can see the entire conversation i had with Bing chat to build this project. The prompts i asked and the responses Bing chat gave me. 
 
 <hr>
 
@@ -1102,7 +1100,7 @@ The html code is below:
 </html>
 ```
 
-I want all elements cantered on the page both horizontally and vertically. I also want the page to be mobile responsive so it adjusts to the users screen size. We can work on colours after we do this.
+I want all elements centred on the page both horizontally and vertically. I also want the page to be mobile responsive so it adjusts to the users screen size. We can work on colours after we do this.
 
 <strong>Response</strong><br> 
 Sure! Here’s some CSS code that you can add to your HTML file to centre all elements on the page both horizontally and vertically and make the page mobile responsive:
@@ -1354,24 +1352,27 @@ You removed this code I entered below:
 
 ```css
 body {
-  background-color: #E6E6FA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-h1 {
-  color: #4169E1;
+@media (max-width: 600px) {
+  #dropzone {
+    width: 80%;
+  }
 }
 
-p {
-  color: #000080;
-}
+@media (max-width: 600px) {
 
-#dropzone {
-  border-color: #4169E1;
-}
-
-button {
-  background-color: #4169E1;
-  color: white;
+  #rewind,
+  #fastforward {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+  }
 }
 ```
 
@@ -1427,7 +1428,7 @@ button {
 <br>
 Preview of player generated
 
-This code includes both the color scheme and the other styles you mentioned, such as centering all elements on the page and making the page mobile responsive. You can replace your existing CSS code with this code to apply all of the styles. Let me know if you have any questions or if there’s anything else I can help with!<br>
+This code includes both the color scheme and the other styles you mentioned, such as centring all elements on the page and making the page mobile responsive. You can replace your existing CSS code with this code to apply all of the styles. Let me know if you have any questions or if there’s anything else I can help with!<br>
 18 of 24
 
 <hr>
@@ -1439,7 +1440,7 @@ In the html code, the dropzone has some text written inside the div that says Dr
 <div id="dropzone" style="width: 300px; height: 100px; border: 2px dashed #ccc;">Drop your song here</div>
 ```
 
-I want the test to be centred in the dropzone, at the moment it is written in the top left hand corner. Can you adjust the code so its centred inside the dropzone bother horizontally and vertically
+I want the text to be centred in the dropzone, at the moment it is written in the top left hand corner. Can you adjust the code so its centred inside the dropzone bother horizontally and vertically
 
 <strong>Response</strong><br> 
 Sure! You can centre the text inside the #dropzone element both horizontally and vertically by adding the following CSS code:
@@ -1721,10 +1722,32 @@ This code will apply the same background colour, text colour, padding, and margi
 
 At this point i could do more CSS to give the player a better aesthetic look, however, i wanted to use this project to demonstrate how you could take an idea and build a fully functioning project of HTML, CSS and Javascript using as little as 24 prompts using Bing chat.  
 
-Also this entire project took me around 15 minutes from asking my initial prompt to having a finished fully functioning audio player.
+<strong>Functionality</strong><br>
+The players functionality does exactly what i asked Bing chat for. All of the code that was generated was done so will no errors and it functioned exactly how i wanted it to. I did need to expand on one or two requests to get it exactly how i wanted, but the functionality works the way i requested.
 
-HTML: 37 Lines of code<br>
-CSS: 65 Lines of code<br>
-Javascript: 89 Lines of code<br>
-Total: 191 Lines of code
+<strong>Design and aesthetics</strong><br>
+For me Bing chat is still lacking in the CSS and design space. When i asked it for a few colour schemes originally the green and brown versions it came back with very not pleasant to look at. I had to prompt it to try the blue/lavender. Also the final colour scheme of dark grey and bright green came from me the developer as a prompt. 
+
+Im sure i could probably make this much more aesthetically pleasing if i used more prompts, but the whole idea behind this project was to get a MVP (Minimum Viable Product) published in as few prompts as possible. 
+
+Ive no doubt as the ChatGPT/Bing chat technology develops the design and aesthetics will improve, but for now it is lacking in this area.
+
+<strong>Development time</strong><br>
+This is where Bing chat really did show what its capable of, this entire project was completed in around 15 minutes from my first prompt right through until my 24th prompt.
+
+<strong>Code summary</strong><br>
+<strong>HTML:</strong> 37 Lines of code<br>
+<strong>CSS:</strong> 65 Lines of code<br>
+<strong>Javascript:</strong> 89 Lines of code<br>
+<strong>Total lines of code:</strong> 191
+
+<strong>Final thoughts</strong><br>
+I think this project really shows the power and potential of ChatGPT/Bing chat. Any experienced developer reading this might think its a simple easy project and i could do it in my sleep. 
+
+However what i wanted to demonstrate with this project was how someone with little or no coding experience could leverage the power of Bing chat/ChatGPT and take a project from concept to completion in as little as 15 minutes.
+
+As well as being a junior software developer im also an entrepreneur and business owner. I meet so many people with great business ideas who sometimes don't have the necessary funding or technical expertise to develop their ideas into products. 
+
+As long these AI tools remain free/minimum cost, this barrier to entry is a barrier i can see being broken down dramatically which i think is a good thing. 
 </details>
+
